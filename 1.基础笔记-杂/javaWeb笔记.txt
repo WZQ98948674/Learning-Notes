@@ -1,0 +1,73 @@
+MySQL服务启动：
+	1.	cmd--services.mcs
+	2.cmd--管理员打开--net stop mysql/net start mysql
+
+登录MySQL：
+	mysql -uroot -p
+	
+远程登录
+	mysql -hip地址	-uroot -p
+
+
+SQL分类：
+	DDL：操作数据库和表
+	DML：增删改表中的数据
+	DQL：查询表中的数据
+	DCL：权限控制
+
+
+DDL操作数据库：
+	增（Create）
+		create database db2;
+		create database if not exists db2;
+		create database db3 character set gbk;
+
+	查（Retrieve）
+		show databases;
+		show create database db1; //可以看到数据库的字符集
+
+	改（Update）
+		alter database db2 character set uft8
+
+	删（Delete）
+		drop database db2;
+		drop database if exists db2;
+
+	使用数据库：
+		查询当前使用的数据库	select databse();
+		使用数据库		use db1;
+
+
+DDL操作表：
+	增（Create）
+		create table mydb9(
+			列名1 数据类型1，
+			...
+		);
+		create table mydb99 like mydb9;//复制一张表
+	查（Retrieve）
+		show tables;
+		desc mydb1;  //查询表结构
+		show create table mydb1;//查看表的字符集
+	改（Update）
+		alter table mydb1 rename to mydb111;		//修改表名称
+		alter table mydb1 character set utf8;		//修改表的字符集
+		alter table mydb1 add 列名 数据类型;  		//添加一列
+		alter table mydb1 change 列名 新列名 新类型; 	//修改列名和类型
+		alter table mydb1 notify 列名 新数据类型;  	//修改列的类型
+		alter table mydb1 drop 列名;   			//删除一列	
+	删（Delete）
+		drop table mydb1;
+		drop table if exists mydb1;
+		truncate table mudb1;           //删除表和表中的数据，新建一张空表
+
+数据库数据类型
+	datetime和timestamp类型：
+		相同点：年月日时分秒
+		不同点：timestamp类型如果不赋值，或赋值为null，会自动赋值为系统当前时间
+
+DML：增删改表中的数据
+	
+	增：insert into 表名(列名1..列名n) values (值1...值n);
+	删: delete from 表名 [where 条件];
+	改：update 表名 set 列名1 = 值1 , ... ,列名n = 值n [where 条件];
