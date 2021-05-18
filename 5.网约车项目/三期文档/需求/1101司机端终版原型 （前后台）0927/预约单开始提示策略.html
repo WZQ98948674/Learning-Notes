@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>预约单开始提示策略</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/预约单开始提示策略/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/ie.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="files/预约单开始提示策略/data.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u5092" class="ax_default label">
+        <div id="u5092_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5093" class="text" style="visibility: visible;">
+          <p style="font-size:16px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">预约单开始提示逻辑</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">预约单提前1小时，进行消息提示。</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1）已登录车机APP：向司机发送短信提示行程即将开始。</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2）未登录车机APP，已登录手机APP，手机APP在主屏且屏幕亮起向司机发送短信，同时向APP发送通知。</span></p><p style="font-size:14px;"><span style="font-family:'Arial Normal', 'Arial';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u5094" class="ax_default _图片">
+        <img id="u5094_img" class="img " src="images/预约单开始提示策略/u5094.png"/>
+        <!-- Unnamed () -->
+        <div id="u5095" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u5096" class="ax_default label">
+        <div id="u5096_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5097" class="text" style="visibility: visible;">
+          <p><span>如上图，当提示司机即将有接单行程时，手机app仍然可以抢单。20180606</span></p><p><span><br></span></p><p><span>点击扫码登录车机进入扫一扫页面，若首次使用扫一扫或未获取相机权限进行权限申请。</span></p><p><span><br></span></p><p><span>3）未登录车机APP，已登录手机APP，手机APP不在主屏或屏幕未亮起的：向司机发送短信，同时推送消息栏通知。</span></p><p><span>4）未登录车机APP，也未登录手机APP：向司机发送短信通知。</span></p><p><span>短信及消息文案：“今天XX时XX分，从XX至XX的预约单即将开始，请立即前往去接乘客”</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u5098" class="ax_default label">
+        <div id="u5098_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5099" class="text" style="visibility: visible;">
+          <p><span>提示策略同720版本</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
